@@ -25,7 +25,7 @@ k=$(ssh -i 'cndi_rsa' "ubuntu@$MICROK8S_HOST" -t 'sudo microk8s config') && echo
   environment variable
 - removes the `certificate-authority-data` field
 - adds the `insecure-skip-tls-verify: true` field
-- adds an `'admin'` `user` with the `client-certificate-data` and
+- adds an `'admin'` `user` with corresponding `client-certificate-data` and
   `client-key-data`
 
 ## notes
