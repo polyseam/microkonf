@@ -15,6 +15,10 @@ export MICROK8S_HOST='ec2-44-199-250-39.compute-1.amazonaws.com';
 k=$(ssh -i 'cndi_rsa' "ubuntu@$MICROK8S_HOST" -t 'sudo microk8s config') && echo "$k" | microkonf
 ```
 
+## dependencies
+
+- `kubectl` used to query, update, and delete `~/.kube/config` data
+
 ## transformations
 
 - updates the `server` field to the public address passed in the `MICROK8S_HOST`
